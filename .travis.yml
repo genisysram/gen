@@ -1,6 +1,9 @@
 language: c
 install: wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-docker.sh
 script: bash -ex .travis-docker.sh
+arch:
+     - amd64
+     - ppc64le
 services:
 - docker
 env:
